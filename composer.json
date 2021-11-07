@@ -1,0 +1,16 @@
+{
+    "name": "jpoliveira08/simple_crud_php",
+    "description": "A simple project of a CRUD in PHP working with json",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jpoliveira08",
+            "email": "joaopedro.oliveirajava@gmail.com"
+        }
+    ],
+    "require": {}
+}
