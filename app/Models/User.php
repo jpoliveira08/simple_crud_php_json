@@ -1,19 +1,18 @@
 <?php
 
 namespace App\Models;
-
-class Users
+/**
+ * All methods of CRUD operations will be here
+ */
+class User
 {
-
-    public function getUsers()
+    /**
+    * Reading json file  
+    */
+    public static function getUsers()
     {
-        /**
-         * Reading json file  
-         */
         return json_decode(file_get_contents(__DIR__ . '/users.json'), true);
-
     }
-    
     /**
      * Will be use for update and delete
      */
