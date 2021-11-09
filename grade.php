@@ -41,8 +41,8 @@ use App\Controller\{Controller, Request, UserController};
                             <td><?php echo $user['website']; ?></td>
                             <td>
                                 <!-- View -->
-                                <a href="?controller=/app/Controller/UserController&method=edit&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
-                                <a href="?controller=/app/Controller/UserController&method=delete&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
+                                <a href="?controller=App\Controller\UserController&method=edit&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
+                                <a href="?controller=App\Controller\UserController&method=delete&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
                             </td>
                         </tr>
                     <?php 

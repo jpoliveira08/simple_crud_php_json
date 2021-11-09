@@ -23,7 +23,7 @@ ini_set('display_errors', true);
     <body>
     <?php
         if ($_GET) {
-            error_log(class_exists(UserController::class));
+            error_log(class_exists('App\Controller\UserController'));
             error_log(class_exists($_GET['controller'], false));
             $controller = isset($_GET['controller']) ? ((class_exists($_GET['controller'])) ? new $_GET['controller'] : NULL ) : null;
             $method = isset($_GET['method']) ? $_GET['method'] : null;
@@ -42,7 +42,7 @@ ini_set('display_errors', true);
         } else {
             echo '<h1>Users</h1><hr><div class="container">';
             echo 'Welcome to kind of MVC CRUD project<br /><br />';
-            echo '<a href="?controller=/app/Controller/UserController&method=toList" class="btn btn-success">Vamos Começar!</a></div>';
+            echo '<a href="?controller=App\Controller\UserController&method=toList" class="btn btn-success">Vamos Começar!</a></div>';
         }
         ?>
     </body>
