@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Controller\Request;
 
 class Controller
 {
@@ -9,7 +10,7 @@ class Controller
     
     public function __construct()
     {
-        $this->request = new Request;
+        $this->request = new Request();
     }
 
     public function view($archive, $array = null)
@@ -20,7 +21,7 @@ class Controller
             }
         }
         ob_start();
-        include "{archive}.php";
+        include "{$archive}.php";
         ob_flush();
     }
 }

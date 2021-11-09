@@ -34,15 +34,15 @@ use App\Controller\{Controller, Request, UserController};
                 if($users){
                     foreach ($users as $user) { ?>
                         <tr>
-                            <td><?php echo $user->name; ?></td>
-                            <td><?php echo $user->username; ?></td>
-                            <td><?php echo $user->email; ?></td>
-                            <td><?php echo $user->phone; ?></td>
-                            <td><?php echo $user->website; ?></td>
+                            <td><?php echo $user['name']; ?></td>
+                            <td><?php echo $user['username']; ?></td>
+                            <td><?php echo $user['email']; ?></td>
+                            <td><?php echo $user['phone']; ?></td>
+                            <td><?php echo $user['website']; ?></td>
                             <td>
                                 <!-- View -->
-                                <a href="?controller=UserController&method=edit&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
-                                <a href="?controller=UserController&method=delete&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
+                                <a href="?controller=/app/Controller/UserController&method=edit&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
+                                <a href="?controller=/app/Controller/UserController&method=delete&id=<?php echo $user->id; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
                             </td>
                         </tr>
                     <?php 
