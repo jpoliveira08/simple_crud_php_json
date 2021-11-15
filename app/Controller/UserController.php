@@ -15,6 +15,12 @@ class UserController extends Controller
         $users = User::getUsers();
         return $this->view('grade', ['users' => $users]);
     }
+    public function toListInd($data)
+    {
+        $user = User::getUserById($data['id']);
+        return $this->view('viewUser', ['user' => $user]);
+        
+    }
     public function update()
     {
 

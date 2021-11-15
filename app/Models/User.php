@@ -16,9 +16,15 @@ class User
     /**
      * Will be use for update and delete
      */
-    public function getUserById($id)
+    public static function getUserById($id)
     {
-
+        $users = User::getUsers();
+        foreach ($users as $user) {
+            if($user['id'] == $id){
+                return $user;
+            }
+        }
+        return null;
     }
 
     public function createUser($data)
