@@ -1,9 +1,3 @@
-<?php
-
-require './vendor/autoload.php';
-
-?>
-
 <div class="container">
     <table class="table">
         <!-- Create columns -->

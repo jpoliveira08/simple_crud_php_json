@@ -2,7 +2,7 @@
 
 require './vendor/autoload.php';
 
-include_once './partials/header.php';
+include_once './public/partials/header.php';
 
 if ($_GET) {
     $controller = isset($_GET['controller']) ? ((class_exists($_GET['controller'])) ? new $_GET['controller'] : NULL ) : null;
@@ -25,5 +25,5 @@ if ($_GET) {
     echo '<a href="?controller=App\Controller\UserController&method=toList" class="btn btn-success">Vamos Começar!</a></div>';
 }
 
-include_once './partials/footer.php';
+include_once './public/partials/footer.php';
 ?>

@@ -13,12 +13,12 @@ class UserController extends Controller
     public function toList()
     {
         $users = User::getUsers();
-        return $this->view('grade', ['users' => $users]);
+        return $this->view('./public/grade', ['users' => $users]);
     }
     public function toListInd($data)
     {
         $user = User::getUserById($data['id']);
-        return $this->view('viewUser', ['user' => $user]);
+        return $this->view('./public/viewUser', ['user' => $user]);
         
     }
     public function update()

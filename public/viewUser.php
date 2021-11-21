@@ -1,10 +1,7 @@
 <?php
 
-require_once './vendor/autoload.php'; 
-require_once './partials/header.php';
-
 if(!isset($user)){
-    header('Location: ./partials/not_found.php');
+    header('Location: ./public/partials/not_found.php');
     exit;
 }
 ?>
@@ -44,5 +41,3 @@ if(!isset($user)){
         </table>
     </div>
 </div>
-
-<?php require_once './partials/footer.php';
