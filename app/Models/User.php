@@ -27,16 +27,21 @@ class User
         return null;
     }
 
-    public function createUser($data)
+    /**
+     * This functions will be contain the json commands
+     *
+     */
+    public static function updateUser($data, $id)
     {
-
+        $users = User::getUsers();
+        foreach($users as $i => $user){
+            if($user['id'] == $id){
+                $users[$i] = array_merge($user, $data);
+            }
+        }
+        file_put_contents(__DIR__.'/users.json', json_encode($users));
     }
 
-    public function updateUser($data, $id)
-    {
-
-    }
-    
     public function delete($id)
     {
 

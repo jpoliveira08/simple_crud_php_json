@@ -21,11 +21,21 @@ class UserController extends Controller
         return $this->view('./public/viewUser', ['user' => $user]);
         
     }
-    public function update()
+    public function edit($data)
     {
-
+        $user = User::getUserById($data['id']);
+        return $this->view('./public/updateUser', ['user' => $user]);
     }
-    
+
+    public function update($data)
+    {
+        $user = User::getUserById($data['id']);
+        if($_POST){
+            User::updateUser($_POST, $user['id']);
+        }
+        return $this->toList();
+    }
+
     public function delete($data)
     {
 

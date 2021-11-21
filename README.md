@@ -1,3 +1,3 @@
 <h1 align="center">Prototype</h1>
 
-<img src="./img/homepage.png">
+<img src="./public/img/homepage.png">
