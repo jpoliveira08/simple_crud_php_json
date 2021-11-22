@@ -33,9 +33,21 @@ class UserController extends Controller
         if($_POST){
             User::updateUser($_POST, $user['id']);
         }
-        return $this->toList();
+        header('Location: ?controller=App\Controller\UserController&method=toList');
+        exit;
     }
-
+    public function create()
+    {
+        return $this->view('./public/form');
+    }
+    public function save()
+    {
+        if($_POST){
+            User::createUser($_POST);
+        }
+        header('Location: ?controller=App\Controller\UserController&method=toList');
+        exit;
+    }
     public function delete($data)
     {
 

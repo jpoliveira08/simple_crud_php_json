@@ -1,15 +1,7 @@
-<?php
-
-if(!isset($user)){
-    header('Location: ./public/partials/not_found.php');
-    exit;
-}
-
-?>
 <div class="container">
     <div class="card">
         <div class="card-header">
-            <h3>Update User <b><?php echo $user['name']; ?></b></h3>
+            <h3>Create new User</h3>
         </div>
         <div class="card-body">
             <?php include 'form.php'; ?>

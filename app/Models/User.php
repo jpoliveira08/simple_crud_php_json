@@ -28,7 +28,7 @@ class User
     }
 
     /**
-     * This functions will be contain the json commands
+     * This functions update a user
      *
      */
     public static function updateUser($data, $id)
@@ -39,11 +39,28 @@ class User
                 $users[$i] = array_merge($user, $data);
             }
         }
-        file_put_contents(__DIR__.'/users.json', json_encode($users));
+        User::putJson($users);
     }
+    /**
+     * This function create a user
+     *
+     */
+    public static function createUser($data)
+    {
+        $users = User::getUsers();
+        $data['id'] = rand(100, 1000);
 
+        $users = $data;
+
+        self::putJson($users);
+    }
     public function delete($id)
     {
 
+    }
+
+    public static function putJson($users)
+    {
+        file_put_contents(__DIR__.'/users.json', json_encode($users, JSON_PRETTY_PRINT));
     }
 }

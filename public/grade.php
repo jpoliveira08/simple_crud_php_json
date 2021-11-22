@@ -1,4 +1,7 @@
 <div class="container">
+    <p>
+        <a class="btn btn-outline-success" href="?controller=App\Controller\UserController&method=create">Create new User</a>
+    </p>
     <table class="table">
         <!-- Create columns -->
         <thead>
