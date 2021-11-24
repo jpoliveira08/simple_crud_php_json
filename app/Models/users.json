@@ -24,8 +24,8 @@
         "website": "ola.org"
     },
     {
-        "id": 7,
-        "name": "Kurtis Weissnat",
+        "id": "7",
+        "name": "Kurtis",
         "username": "Elwyn.Skiles",
         "email": "Telly.Hoeger@billy.biz",
         "phone": "210.067.6132",
@@ -70,5 +70,13 @@
         "phone": "12345678",
         "website": "teste.com.joao",
         "id": 311
+    },
+    {
+        "name": "Test",
+        "username": "Test",
+        "email": "user@test",
+        "phone": "12345678",
+        "website": "teste.user",
+        "id": 279
     }
 ]

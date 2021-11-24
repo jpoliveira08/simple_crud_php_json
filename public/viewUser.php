@@ -11,6 +11,11 @@ if(!isset($user)){
         <div class="card-header">
             <h3>View User: <b><?php echo $user['name']; ?></b></h3>
         </div>
+        <div class="card-body">
+        <a href="?controller=App\Controller\UserController&method=edit&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
+        <a href="?controller=App\Controller\UserController&method=delete&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
+        <a class="btn btn-sm btn-outline-warning" href="?controller=App\Controller\UserController&method=toList">Cancelar</a>
+        </div>
         <table class="table">
             <tbody>
                 <tr>
