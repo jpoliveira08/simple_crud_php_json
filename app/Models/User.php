@@ -18,7 +18,7 @@ class User
      */
     public static function getUserById($id)
     {
-        $users = User::getUsers();
+        $users = self::getUsers();
         foreach ($users as $user) {
             if($user['id'] == $id){
                 return $user;
@@ -33,13 +33,13 @@ class User
      */
     public static function updateUser($data, $id)
     {
-        $users = User::getUsers();
+        $users = self::getUsers();
         foreach($users as $i => $user){
             if($user['id'] == $id){
                 $users[$i] = array_merge($user, $data);
             }
         }
-        User::putJson($users);
+        self::putJson($users);
     }
     /**
      * This function create a user
@@ -47,10 +47,10 @@ class User
      */
     public static function createUser($data)
     {
-        $users = User::getUsers();
+        $users = self::getUsers();
         $data['id'] = rand(100, 1000);
 
-        $users = $data;
+        $users[] = $data;
 
         self::putJson($users);
     }

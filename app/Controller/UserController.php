@@ -36,10 +36,12 @@ class UserController extends Controller
         header('Location: ?controller=App\Controller\UserController&method=toList');
         exit;
     }
+
     public function create()
     {
         return $this->view('./public/form');
     }
+    
     public function save()
     {
         if($_POST){
