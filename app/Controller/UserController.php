@@ -52,6 +52,7 @@ class UserController extends Controller
     }
     public function delete($data)
     {
-
+        $user = User::getUserById($data['id']);
+        
     }
 }

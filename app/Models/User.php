@@ -54,9 +54,14 @@ class User
 
         self::putJson($users);
     }
-    public function delete($id)
+    public function deleteUser($id)
     {
-
+        $users = self::getUsers();
+        foreach($users as $i => $user){
+            if($users['id'] == $id){
+                array_splice($users, $i, 1);
+            }
+        }
     }
 
     public static function putJson($users)
