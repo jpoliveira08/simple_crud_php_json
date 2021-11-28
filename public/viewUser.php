@@ -13,7 +13,10 @@ if(!isset($user)){
         </div>
         <div class="card-body">
         <a href="?controller=App\Controller\UserController&method=edit&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-secondary">Update</a>
-        <a href="?controller=App\Controller\UserController&method=delete&id=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline-danger">Delete</a>
+        <form style="display: inline;" method="POST" action="?controller=App\Controller\UserController&method=delete">
+            <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
+            <button class="btn btn-sm btn-outline-danger">Delete</button>
+        </form>
         <a class="btn btn-sm btn-outline-warning" href="?controller=App\Controller\UserController&method=toList">Cancelar</a>
         </div>
         <table class="table">

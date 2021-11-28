@@ -50,9 +50,12 @@ class UserController extends Controller
         header('Location: ?controller=App\Controller\UserController&method=toList');
         exit;
     }
-    public function delete($data)
+
+    public function delete()
     {
-        $user = User::getUserById($data['id']);
-        
+        $user = User::getUserById($_POST['id']);
+        User::deleteUser($user['id']);
+        header('Location: ?controller=App\Controller\UserController&method=toList');
+        exit;
     }
 }

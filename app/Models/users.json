@@ -1,21 +1,5 @@
-[
-    {
-        "id": "4",
-        "name": "Patricia Te",
-        "username": "Karianne 1",
-        "email": "Julianne.OConner@kory.org 1",
-        "phone": "123451234 1",
-        "website": "kale.biz 1"
-    },
-    {
-        "id": "5",
-        "name": "Chelsey Dietrich",
-        "username": "Kamren",
-        "email": "Lucio_Hettinger@annie.ca",
-        "phone": "453218563",
-        "website": "demarco.info"
-    },
-    {
+{
+    "2": {
         "id": 6,
         "name": "Mrs. Dennis Schulist",
         "username": "Leopoldo_Corkery",
@@ -23,7 +7,7 @@
         "phone": "1078412367",
         "website": "ola.org"
     },
-    {
+    "3": {
         "id": "7",
         "name": "Kurtis",
         "username": "Elwyn.Skiles",
@@ -31,7 +15,7 @@
         "phone": "210.067.6132",
         "website": "elvis.io"
     },
-    {
+    "4": {
         "id": 8,
         "name": "Nicholas Runolfsdottir V",
         "username": "Maxime_Nienow",
@@ -39,7 +23,7 @@
         "phone": "586.493.6943 x140",
         "website": "jacynthe.com"
     },
-    {
+    "5": {
         "id": 9,
         "name": "Glenna Reichert",
         "username": "Delphine",
@@ -47,7 +31,7 @@
         "phone": "(775)976-6794 x41206",
         "website": "conrad.com"
     },
-    {
+    "6": {
         "id": 10,
         "name": "Clementina DuBuque",
         "username": "Moriah.Stanton",
@@ -55,28 +39,12 @@
         "phone": "024-648-3804",
         "website": "ambrose.net"
     },
-    {
-        "id": 1879571,
-        "name": "John Doe",
-        "username": "john22",
-        "email": "",
-        "phone": "12345",
-        "website": ""
-    },
-    {
-        "name": "Joao",
-        "username": "Pedro",
-        "email": "joao@teste",
-        "phone": "12345678",
-        "website": "teste.com.joao",
-        "id": 311
-    },
-    {
-        "name": "Test",
-        "username": "Test",
-        "email": "user@test",
-        "phone": "12345678",
-        "website": "teste.user",
-        "id": 279
+    "10": {
+        "name": "John",
+        "username": "Peter",
+        "email": "test@test",
+        "phone": "123456789",
+        "website": "teste.test",
+        "id": 220
     }
-]
+}
