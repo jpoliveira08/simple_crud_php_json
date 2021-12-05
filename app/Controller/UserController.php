@@ -45,6 +45,12 @@ class UserController extends Controller
     public function save()
     {
         if($_POST){
+            $name = $_POST['name'];
+            $username = $_POST['username'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $website = $_POST['website'];
+
             User::createUser($_POST);
         }
         header('Location: ?controller=App\Controller\UserController&method=toList');
