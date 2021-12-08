@@ -7,7 +7,7 @@ if(!isset($user)){
 ?>
 
 <div class="container">
-    <div class="card">
+    <div class="card mt-3">
         <div class="card-header">
             <h3>View User: <b><?php echo $user['name']; ?></b></h3>
         </div>

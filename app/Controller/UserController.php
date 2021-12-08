@@ -19,7 +19,7 @@ class UserController extends Controller
     public function edit($data)
     {
         $user = User::getUserById($data['id']);
-        return $this->view('./public/updateUser', ['user' => $user]);
+        return $this->view('./public/form', ['user' => $user]);
     }
 
     public function update($data)

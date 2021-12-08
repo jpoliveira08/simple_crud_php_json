@@ -20,7 +20,7 @@ if ($_GET) {
         echo "Controller doesn't found!";
     }
 } else {
-    echo '<h1>CRUD</h1><hr><div class="container">';
+    echo '<div class="container"><h1>CRUD</h1><hr>';
     echo 'Welcome to a simple MVC CRUD project<br /><br />';
     echo '<a href="?controller=App\Controller\UserController&method=toList" class="btn btn-success"> Let\'s Start ! </a></div>';
 }
