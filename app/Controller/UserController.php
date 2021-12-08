@@ -19,6 +19,10 @@ class UserController extends Controller
     public function edit($data)
     {
         $user = User::getUserById($data['id']);
+        if(!$user){
+            return $this->view('./public/partials/not_found');
+            exit;
+        }
         return $this->view('./public/form', ['user' => $user]);
     }
 

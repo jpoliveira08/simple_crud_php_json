@@ -1,20 +1,8 @@
-<?php
-
-$create = true;
-
-if($_GET['id']){
-    $create = false;
-    if(!isset($user)){
-        header('Location: ./public/partials/not_found.php');
-        exit;
-    }
-}
-?>
 <div class="container">
     <div class="card mt-3">
         <div class="card-header">
         <?php
-                if(!$create){
+                if(isset($user)){
                     echo '<h3>Update User: <b>' . $user['name'] . '</b></h3>';
                 }
                 else{
