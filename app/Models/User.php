@@ -54,6 +54,10 @@ class User
 
         self::putJson($users);
     }
+    /**
+     * This function delete a user
+     *
+     */
     public static function deleteUser($id)
     {
         $users = self::getUsers();
@@ -65,6 +69,10 @@ class User
         self::putJson($users);
     }
 
+    /**
+     * This function will apply changes into json file
+     *
+     */
     public static function putJson($users)
     {
         file_put_contents(__DIR__.'/users.json', json_encode($users, JSON_PRETTY_PRINT));

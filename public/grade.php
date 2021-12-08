@@ -1,13 +1,14 @@
 <div class="container">
-    <p>
-        <a class="btn btn-outline-success" href="?controller=App\Controller\UserController&method=create">Create new User</a>
-    </p>
+
+    <h2>List of registered users</h2>
+    <a class="btn btn-outline-success mb-3" href="?controller=App\Controller\UserController&method=create">Create new User</a>
+
     <table class="table">
         <!-- Create columns -->
         <thead>
-            <tr>
+            <tr align="center">
                 <th>Name</th>
-                <th>username</th>
+                <th>Username</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Website</th>
@@ -19,7 +20,7 @@
             <?php
             if($users){
                 foreach ($users as $user) { ?>
-                    <tr>
+                    <tr align="center">
                         <td><?php echo $user['name']; ?></td>
                         <td><?php echo $user['username']; ?></td>
                         <td><?php echo $user['email']; ?></td>
@@ -44,7 +45,7 @@
             } else {
                 ?>
                 <tr>
-                    <td>Nenhum registro encontrado</td>
+                    <td>No record found</td>
                 </tr>
                 <?php
             }?>

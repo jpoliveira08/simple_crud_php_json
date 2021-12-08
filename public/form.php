@@ -26,6 +26,6 @@
         </div>
         <input type="hidden" name="id" value="<?php echo isset($user['id']) ? $user['id'] : null; ?>"/>
         <button class="btn btn-success" type="submit">Submit</button>
-        <a class="btn btn-danger" href="?controller=App\Controller\UserController&method=toList">Cancelar</a>
+        <a class="btn btn-danger" href="?controller=App\Controller\UserController&method=toList">Cancel</a>
     </form>
 </div>

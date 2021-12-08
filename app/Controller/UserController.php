@@ -5,10 +5,6 @@ use App\Models\User;
 @session_start();
 class UserController extends Controller
 {
-    //Meio de campo
-    /**
-     * Listar – O controller deve buscar com a Model uma lista de contatos e enviar para View.
-     */
     public function toList()
     {
         $users = User::getUsers();
