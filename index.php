@@ -19,11 +19,14 @@ if ($_GET) {
     } else {
         echo "Controller doesn't found!";
     }
-} else {
-    echo '<div class="container"><h1>CRUD</h1><hr>';
-    echo 'Welcome to a simple MVC CRUD project<br /><br />';
-    echo '<a href="?controller=App\Controller\UserController&method=toList" class="btn btn-success"> Let\'s Start ! </a></div>';
-}
+}else { ?>
+
+<div class="container"><h1>CRUD</h1><hr>
+    Welcome to a simple MVC CRUD project<br/><br />
+    <a href="?controller=App\Controller\UserController&method=toList" class="btn btn-success"> Let's Start ! </a>
+</div>
+
+<?php };
 
 include_once './public/partials/footer.php';
 ?>

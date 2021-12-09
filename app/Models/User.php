@@ -2,7 +2,7 @@
 
 namespace App\Models;
 /**
- * All methods of CRUD operations will be here
+ * All data operations will be here
  */
 class User
 {
