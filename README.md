@@ -55,7 +55,7 @@
 </p>
 
 <h3><b>View</b></h3>
-<p>In this part we will hhave the user interface, in another words, is responsible for rendering the contents in the user's browser and the pages that he will interact with, like a table of users registered or a page of user not found how we can see below.</p>
+<p>In this part we will have the user interface, in another words, is responsible for rendering the contents in the user's browser and the pages that he will interact with, like a table of users registered or a page of user not found how we can see below.</p>
 
 <p align="center">
 <img src="./public/img/notFound.gif">
